@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+// Import the Provider from mobx-react, used below
 import {Provider} from 'mobx-react';
+// Import our store
 import ShoeStore from './stores/ShoeStore';
 
-import './index.css';
+// import our styles produced from sass
+import './css/styles.css';
 
 /*
 This seems a little weird below, but we are wrapping our App component
@@ -19,5 +22,6 @@ const Root = (
   </Provider>
 )
 
+// Render the Root variable we created above, not <App/>
 ReactDOM.render(Root, document.getElementById('root'));
 registerServiceWorker();

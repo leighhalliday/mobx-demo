@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// Needed to allow our component to use store and observe changes to store
 import {observer, inject} from 'mobx-react';
 
 /*
